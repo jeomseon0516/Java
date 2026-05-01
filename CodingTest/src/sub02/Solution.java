@@ -1,4 +1,4 @@
-package sub2;
+package sub02;
 
 import java.util.Scanner;
 
