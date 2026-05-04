@@ -1,4 +1,4 @@
-package sub5;
+package sub4;
 
 public class Person {
 	protected String name;

@@ -1,23 +1,12 @@
-package sub5;
+package sub4;
 
 public class Sedan extends Car {
 	
 	private int cc;
-	private final int MAX_SPEED = 200;
 	
 	public Sedan(String name, String color, int speed, int cc) {
 		super(name, color, speed); 
 		this.cc = cc;
-	}
-	
-	@Override
-	public void speedUp(int speed) {
-		// 부모 클래스에 있는 speedUp을 자식클래스에 맞게 재정의
-		super.speedUp(speed);
-		
-		if (speed > MAX_SPEED) {
-			this.speed = MAX_SPEED;
-		}
 	}
 	
 	public void drive() {

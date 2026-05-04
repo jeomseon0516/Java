@@ -1,23 +1,12 @@
-package sub5;
+package sub4;
 
 public class Truck extends Car {
 	
 	private int capacity; // 적재용량
-	private final int MAX_SPEED = 160;
 	
 	public Truck(String name, String color, int speed, int capacity) {
 		super(name, color, speed);
 		this.capacity = capacity;
-	}
-	
-	@Override
-	public void speedUp(int speed) {
-		
-		this.speed += speed;
-		
-		if (speed > MAX_SPEED) {
-			this.speed = MAX_SPEED;
-		}
 	}
 	
 	public void load(int capacity) {

@@ -1,4 +1,4 @@
-package sub5;
+package sub4;
 
 public class StockAccount extends Account { // StockAccount is(has) Account' 명제 성립여부 확인
 
