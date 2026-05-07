@@ -32,7 +32,7 @@ public class Student {
 			Subject[] newSubjects = new Subject[subjectCount]; // 현재 수강중인 과목의 수만큼 새로운 과목 배열 생성
 			int[] newScores = new int[subjectCount]; // 현재 수강중인 과목의 수만큼 새로운 점수 배열 생성
 			
-			for (int i = 0; i < subjects.length; i++) { // 이전에 수강중이던 과목의 수만큼 배열 조회
+			for (int i = 0, prevCount = subjectCount - 1; i < prevCount; i++) { // 이전에 수강중이던 과목의 수만큼 배열 조회
 				newSubjects[i] = subjects[i]; // 이전 배열에서 새로운 배열로 값 복사
 				newScores[i] = scores[i]; // 이전 배열에서 새로운 배열로 값 복사
 			}
@@ -52,12 +52,10 @@ public class Student {
 		int index = -1; // 인덱스 초기화
 		
 		for (int i = 0; i < subjectCount; i++) { // 조회할 과목의 인덱스 찾기
-			if (subjects[i] == null) break;
+			if (subjects[i] != sub) continue;
 			
-			if (subjects[i] == sub) {
-				index = i;
-				break;
-			}
+			index = i;
+			break;
 		}
 		
 		if (index > -1) { // 과목을 수강중인 경우

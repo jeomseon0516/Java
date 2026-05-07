@@ -25,7 +25,7 @@ public class Subject {
 		if (studentCount > students.length) { // 현재 수강중인 학생의 수가 배열의 길이보다 큰 경우
 			Student[] newStudents = new Student[studentCount]; // 새로운 배열 생성
 			
-			for (int i = 0; i < students.length; i++) { // 현재 배열의 수만큼 배열 요소 조회
+			for (int i = 0, prevCount = studentCount - 1; i < prevCount; i++) { // 현재 배열의 수만큼 배열 요소 조회
 				newStudents[i] = students[i]; // 새로운 배열로 기존 배열의 값 복사
 			}
 			
@@ -38,12 +38,15 @@ public class Subject {
 	public void printSubjectInfo() {
 		System.out.println("과목명 : " + subName);
 		
-		System.out.print("수강생 : ");
-		for (Student student : students) {
-			if (student == null) break;
+		String result = "";
+		for (int i = 0; i < studentCount;) {
+			result += students[i].getName();
 			
-			System.out.print(student.getName() + ", ");
+			if (++i < studentCount) {
+				result += ", ";
+			}
 		}
-		System.out.println();
+		
+		System.out.printf("수강생 : %s\n", result);
 	}
 }
