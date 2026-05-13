@@ -16,8 +16,8 @@ public class FilesTest {
 		
 		//String source = "C:\\Users\\GGG\\Desktop\\test3.txt";
 		
-		Path source = Paths.get("C:\\Users\\GGG\\Desktop\\source.txt");
-		Path target = Paths.get("C:\\Users\\GGG\\Desktop\\target.txt");
+		Path source = Paths.get("C:\\Users\\GGG\\Desktop\\universe.mp4");
+		Path target = Paths.get("C:\\Users\\GGG\\Desktop\\universe2.mp4");
 		Path destination = Paths.get("C:\\Users\\GGG\\Desktop\\Sample\\source.txt");
 		
 		try {
@@ -25,10 +25,10 @@ public class FilesTest {
 			Files.copy(source, target);
 			
 			// 파일 이동
-			Files.move(source, destination, StandardCopyOption.REPLACE_EXISTING);
+			//Files.move(source, destination, StandardCopyOption.REPLACE_EXISTING);
 			
 			// 파일 삭제
-			Files.delete(target);;
+			//Files.delete(target);;
 			
 		} catch (IOException e) {
 			e.printStackTrace();
