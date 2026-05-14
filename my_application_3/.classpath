@@ -6,7 +6,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/my_module_b">
+	<classpathentry kind="lib" path="C:/Users/GGG/Desktop/Workspace/Java/my_module_a/dist/my_module_a.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/GGG/Desktop/Workspace/Java/my_module_b/dist/my_module_b.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
