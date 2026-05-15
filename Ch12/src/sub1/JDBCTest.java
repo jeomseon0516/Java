@@ -25,7 +25,6 @@ public class JDBCTest {
 			Connection conn = DriverManager.getConnection(host, user, pass);
 			
 			if (conn != null) {
-				
 				System.out.println("데이터베이스 접속 성공!!!");
 			} else {
 				System.out.println("데이터베이스 접속 실패!!!");
@@ -35,6 +34,5 @@ public class JDBCTest {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 	}
 }
