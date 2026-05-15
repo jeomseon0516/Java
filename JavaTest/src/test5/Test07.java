@@ -19,7 +19,7 @@ public class Test07 {
 			int num = (int)Math.ceil(Math.random() * 45);
 			lottoSet.add(num);
 			
-			if(lottoSet.size() >= 5) {
+			if(lottoSet.size() >= 6) {
 				break;
 			}
 		}

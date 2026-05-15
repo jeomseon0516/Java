@@ -8,15 +8,10 @@ class Apple {
 		this.country = country;
 		this.price = price;
 	}
-	
+
 	@Override
 	public String toString() {
-		return new StringBuilder("Apple [country=")
-			.append(country)
-			.append(", price=")
-			.append(price)
-			.append("]")
-			.toString();
+		return "Apple [country=" + country + ", price=" + price + "]";
 	}
 }
 
@@ -28,15 +23,10 @@ class Banana {
 		this.country = country;
 		this.price = price;
 	}
-	
+
 	@Override
 	public String toString() {
-		return new StringBuilder("Apple [country=")
-			.append(country)
-			.append(", price=")
-			.append(price)
-			.append("]")
-			.toString();
+		return "Banana [country=" + country + ", price=" + price + "]";
 	}
 }
 
@@ -51,12 +41,7 @@ class Grape {
 	
 	@Override
 	public String toString() {
-		return new StringBuilder("Apple [country=")
-			.append(country)
-			.append(", price=")
-			.append(price)
-			.append("]")
-			.toString();
+		return "Grape [country=" + country + ", price=" + price + "]";
 	}
 }
 
