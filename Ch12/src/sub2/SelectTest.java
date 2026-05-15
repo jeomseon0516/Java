@@ -7,9 +7,9 @@ import java.sql.Statement;
 /**
  * 날짜 : 2026/05/15
  * 이름 : 남현호
- * 내용 : Java CRUD Delete 실습 
+ * 내용 : Java CRUD Insert 실습 
  */
-public class DeleteTest {
+public class SelectTest {
 	public static void main(String[] args) {
 		// DB 정보
 		String host = "jdbc:mysql://127.0.0.1:3306/studydb";
@@ -24,7 +24,7 @@ public class DeleteTest {
 			Statement stmt = conn.createStatement();
 			
 			// 3) SQL 실행
-			String sql = "DELETE FROM User1 WHERE userid='J101'";
+			String sql = "INSERT INTO User1 VALUES ('J104', '이순신', '010-1211-1004', 33)";
 			stmt.executeUpdate(sql);
 			
 			// 4) SQL 결과처리(SELECT 작업일 경우)
@@ -36,6 +36,6 @@ public class DeleteTest {
 			e.printStackTrace();
 		} 
 		
-		System.out.println("Delete 완료...");
+		System.out.println("Insert 완료...");
 	}
 }
